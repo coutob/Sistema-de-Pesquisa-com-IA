@@ -4,7 +4,7 @@ import urllib.request
 # ==============================================================
 # PROJETO 4: CATÁLOGO DE PRODUTOS COM TABELA HASH E IA
 # Disciplina: Estrutura de Dados (Sistemas de Informação)
-# Versão Simplificada: Somente Funções e Tipos Básicos (Sem Classes)
+# Versão: Sem Persistência em Disco (Tudo em Memória / Somente Leitura)
 # ==============================================================
 
 
@@ -14,8 +14,8 @@ import urllib.request
 
 def criar_tabela(tamanho=500):
     """
-    Cria uma Tabela Hash com um vetor de tamanho fixo inicial (padrão: 101).
-    Cada posição (bucket) começa como uma lista vazia para tratar colisões.
+    Cria uma Tabela Hash com um vetor de tamanho fixo inicial (padrão: 500).
+    Cada bucket é uma lista para tratar colisões por encadeamento.
     """
     return [[] for _ in range(tamanho)]
 
@@ -23,8 +23,7 @@ def criar_tabela(tamanho=500):
 def funcao_hash(tag, tamanho=500):
     """
     Função Hash Simples (Soma dos códigos ASCII):
-    Soma os valores numéricos de cada caractere da palavra e pega
-    o resto da divisão (%) pelo tamanho da tabela para obter um índice válido.
+    Soma os valores ASCII dos caracteres e calcula o resto da divisão.
     """
     soma = 0
     for letra in tag:
@@ -34,8 +33,8 @@ def funcao_hash(tag, tamanho=500):
 
 def inserir_na_tabela(tabela, tag, produto):
     """
-    Insere um produto associado a uma tag na tabela hash.
-    Trata colisão por encadeamento: adiciona itens na lista do mesmo bucket.
+    Insere um produto associado a uma tag na Tabela Hash em memória.
+    Trata colisão por encadeamento.
     """
     tag = tag.strip().lower()
     if not tag:
@@ -47,10 +46,9 @@ def inserir_na_tabela(tabela, tag, produto):
     # 1. Verifica se a tag já existe nesse bucket
     for item in bucket:
         if item["tag"] == tag:
-            # Se o produto ainda não estiver na lista dessa tag, adiciona
             for p in item["produtos"]:
                 if p["id"] == produto["id"]:
-                    return  # Evita duplicar o mesmo produto sob a mesma tag
+                    return  # Evita duplicar o produto sob a mesma tag
             item["produtos"].append(produto)
             return
 
@@ -74,22 +72,36 @@ def buscar_por_tag(tabela, tag):
 
 
 def buscar_por_varias_tags(tabela, tags, max_resultados=10):
-    """Busca produtos associados a uma ou mais tags, sem retornar duplicados. Limita a quantidade retornada."""
-    encontrados = []
-    ids_vistos = set()
+    """
+    Busca produtos associados a uma ou mais tags.
+    Ranqueia por relevância: produtos que combinam com mais tags aparecem primeiro.
+    """
+    relevancia = {}  # id -> {"produto": prod, "pontos": int}
 
     for tag in tags:
-        for prod in buscar_por_tag(tabela, tag):
-            if prod["id"] not in ids_vistos:
-                ids_vistos.add(prod["id"])
-                encontrados.append(prod)
-                if len(encontrados) >= max_resultados:
-                    return encontrados
-    return encontrados
+        tag_limpa = tag.strip().lower()
+        produtos = buscar_por_tag(tabela, tag_limpa)
+        for prod in produtos:
+            pid = prod["id"]
+            if pid not in relevancia:
+                relevancia[pid] = {"produto": prod, "pontos": 0}
+            relevancia[pid]["pontos"] += 1
+
+    if not relevancia:
+        return []
+
+    # Ordena decrescente pelo número de tags correspondentes (maior relevância no topo)
+    ordenados = sorted(
+        relevancia.values(),
+        key=lambda item: item["pontos"],
+        reverse=True
+    )
+
+    return [item["produto"] for item in ordenados[:max_resultados]]
 
 
 def inspecionar_tabela(tabela):
-    """Exibe no terminal a distribuição dos buckets, colisões e encadeamento."""
+    """Exibe no terminal a distribuição dos buckets, colisões e nós em memória."""
     print("\n-- Estrutura Interna da Tabela Hash (Buckets e Colisões) --")
     buckets_ocupados = 0
 
@@ -103,21 +115,26 @@ def inspecionar_tabela(tabela):
 
 
 # --------------------------------------------------------------
-# 2. INTEGRAÇÃO SIMPLES COM O OLLAMA (IA LOCAL)
+# 2. INTEGRAÇÃO COM IA E GERAÇÃO DE TAGS
 # --------------------------------------------------------------
+
+def extrair_tags_simples(texto):
+    """Extrai palavras-chave significativas para uso em memória."""
+    palavras = texto.lower().replace(",", " ").replace(".", " ").replace("-", " ").split()
+    stopwords = {"para", "com", "sem", "por", "dos", "das", "uma", "uns", "que", "mais", "manga"}
+    return [p for p in palavras if len(p) > 2 and p not in stopwords]
+
 
 def gerar_tags_com_ia(texto, modelo="qwen2.5-coder:1.5b", max_tags=5):
     """
-    Envia uma requisição HTTP simples para o Ollama local (porta 11434).
-    Retorna uma lista de tags sugeridas pela IA.
+    Envia requisição para a IA (Ollama local) gerar tags a partir do texto de consulta.
+    Retorna apenas a lista de tags em memória, sem persistência.
     """
     prompt = (
-    f"Extraia de 3 a {max_tags} palavras chave curtas e relevantes "
-    f"para este produto: '{texto}'. "
-    "Responda apenas em JSON: {\"tags\": [\"tag1\", \"tag2\", ...]}. "
-    "Não inclua palavras genéricas, repetições, ou termos com menos de 3 "
-    "ou mais de 15 letras. Me retorne no máximo 10 tags"
-)
+        f"Extraia de 2 a {max_tags} palavras-chave curtas e diretas sobre este produto ou busca: '{texto}'. "
+        "Responda SOMENTE em JSON no formato: {\"tags\": [\"tag1\", \"tag2\"]}. "
+        "Não inclua explicações ou texto adicional."
+    )
 
     dados = {
         "model": modelo,
@@ -134,47 +151,46 @@ def gerar_tags_com_ia(texto, modelo="qwen2.5-coder:1.5b", max_tags=5):
     )
 
     try:
-        # Tenta conectar ao Ollama local
         with urllib.request.urlopen(requisicao, timeout=15) as resposta:
             corpo = json.loads(resposta.read().decode("utf-8"))
             texto_resposta = corpo.get("response", "{}")
             json_tags = json.loads(texto_resposta)
             lista_tags = json_tags.get("tags", [])
 
-            # Limpa e formata as tags
             tags_finais = [t.strip().lower() for t in lista_tags if isinstance(t, str) and t.strip()]
             if tags_finais:
-                return tags_finais
+                return tags_finais[:max_tags]
     except Exception:
-        # Fallback de segurança: se o Ollama estiver desligado ou der erro,
-        # divide o texto em palavras simples para o programa nunca quebrar na apresentação
+        # Fallback de segurança: caso o Ollama esteja offline
         pass
 
-    # Tags automáticas simples a partir das palavras do texto
-    palavras = texto.lower().replace(",", " ").replace(".", " ").split()
-    return [p for p in palavras if len(p) > 3][:4]
+    # Fallback automático: extrai as palavras-chave do texto
+    return extrair_tags_simples(texto)[:max_tags]
 
 
 # --------------------------------------------------------------
-# 3. PERSISTÊNCIA DE DADOS EM ARQUIVO JSON
+# 3. LEITURA DE DADOS INICIAIS (SOMENTE LEITURA - SEM GRAVAÇÃO)
 # --------------------------------------------------------------
-
-ARQUIVO_PRODUTOS = "produtos(500_itens_aaaaa).json"
-
-
-def salvar_produtos_em_disco(produtos):
-    """Salva a lista completa de produtos diretamente em formato JSON."""
-    with open(ARQUIVO_PRODUTOS, "w", encoding="utf-8") as arquivo:
-        json.dump(produtos, arquivo, ensure_ascii=False, indent=2)
-
 
 def carregar_produtos_do_disco():
-    """Lê os produtos salvos no arquivo JSON se ele existir."""
-    try:
-        with open(ARQUIVO_PRODUTOS, "r", encoding="utf-8") as arquivo:
-            return json.load(arquivo)
-    except (FileNotFoundError, Exception):
-        return []
+    """
+    Lê os produtos do arquivo JSON original apenas para carregar na memória.
+    Não altera nem grava nada no disco.
+    """
+    caminhos = [
+        "produtos_sem_tags.json",
+        "/home/stl/Documents/vscode/projeto_ed1/produtos_sem_tags.json",
+        "produtos(500_itens_aaaaa).json",
+        "/home/stl/produtos(500_itens_aaaaa).json"
+    ]
+    for caminho in caminhos:
+        try:
+            with open(caminho, "r", encoding="utf-8") as arquivo:
+                dados = json.load(arquivo)
+                return dados, caminho
+        except (FileNotFoundError, Exception):
+            continue
+    return [], "Nenhum arquivo encontrado"
 
 
 # --------------------------------------------------------------
@@ -183,48 +199,56 @@ def carregar_produtos_do_disco():
 
 def main():
     tabela = criar_tabela(500)
-    produtos_cadastrados = carregar_produtos_do_disco()
+    produtos_cadastrados, arquivo_origem = carregar_produtos_do_disco()
     proximo_id = 1
 
-    # Reindexa os produtos salvos na Tabela Hash
+    # Indexa os produtos na Tabela Hash exclusivamente em memória RAM
     for prod in produtos_cadastrados:
-        for tag in prod.get("tags", []):
+        # Se o produto não tiver tags predefinidas no arquivo, gera em memória pelo nome
+        tags = prod.get("tags")
+        if not tags:
+            texto = f"{prod.get('nome', '')} {prod.get('descricao', '')}"
+            tags = extrair_tags_simples(texto)
+            prod["tags"] = tags  # apenas no objeto em memória
+
+        for tag in tags:
             inserir_na_tabela(tabela, tag, prod)
 
         if prod.get("id", 0) >= proximo_id:
             proximo_id = prod["id"] + 1
 
-    #print("\n" + "=" * 50)
-    #print("  SISTEMA DE CATÁLOGO DE PRODUTOS (ESTRUTURA DE DADOS)")
-    #print("=" * 50)
+    print("\n" + "=" * 55)
+    print("  CATÁLOGO DE PRODUTOS (TABELA HASH + IA EM MEMÓRIA)")
+    print("=" * 55)
     if produtos_cadastrados:
-        print(f"-> {len(produtos_cadastrados)} produto(s) carregados do arquivo '{ARQUIVO_PRODUTOS}'.")
+        print(f"-> {len(produtos_cadastrados)} produtos carregados do arquivo '{arquivo_origem}'.")
+        print("-> Modo: SOMENTE MEMÓRIA (Nenhuma tag é salva em disco).")
     else:
-        print("-> Nenhum produto salvo anteriormente. Catálogo iniciado vazio.")
+        print("-> Nenhum arquivo encontrado. Catálogo iniciado vazio.")
 
     while True:
-        print("\n--- MENU PRINCIPAL ---\nLojinha de Roupas :)\n\n")
+        print("\n--- MENU PRINCIPAL ---")
         print("1. Cadastrar novo produto")
-        print("2. Buscar produto por termo/tags")
-        print("3. Listar todos os produtos")
+        print("2. Buscar produto por termo/tags (IA)")
+        print("3. Listar todos os produtos em memória")
         print("4. Inspecionar Tabela Hash (buckets e colisões)")
         print("0. Sair")
 
         opcao = input("\nEscolha uma opção: ").strip()
 
-        # OPÇÃO 1: CADASTRAR PRODUTO
+        # OPÇÃO 1: CADASTRAR PRODUTO (APENAS EM MEMÓRIA)
         if opcao == "1":
             print("\n-- Cadastro de Produto --")
             nome = input("Nome do produto: ").strip()
             descricao = input("Descrição detalhada: ").strip()
 
-            if not nome or not descricao:
-                print("Aviso: Nome e descrição não podem ser vazios!")
+            if not nome:
+                print("Aviso: O nome do produto não pode ser vazio!")
                 continue
 
             print("\nGerando tags semânticas via IA...")
             tags = gerar_tags_com_ia(f"{nome}. {descricao}")
-            print(f"Tags geradas: {tags}")
+            print(f"Tags geradas pela IA: {tags}")
 
             # Permite ao usuário adicionar tags extras se quiser
             extras = input("Deseja adicionar mais tags separadas por vírgula? (Enter para pular): ").strip()
@@ -243,46 +267,50 @@ def main():
             proximo_id += 1
             produtos_cadastrados.append(novo_produto)
 
-            # Indexa o produto na Tabela Hash para cada tag
+            # Indexa o produto na Tabela Hash em memória
             for tag in tags:
                 inserir_na_tabela(tabela, tag, novo_produto)
 
-            # Salva no arquivo de persistência
-            salvar_produtos_em_disco(produtos_cadastrados)
-            print(f"\nProduto ID {novo_produto['id']} ('{novo_produto['nome']}') cadastrado e salvo com sucesso!")
+            print(f"\nProduto ID {novo_produto['id']} ('{novo_produto['nome']}') indexado na Tabela Hash!")
+            print("(Cadastrado apenas nesta sessão em memória, sem salvar em disco)")
 
-        # OPÇÃO 2: BUSCAR PRODUTOS
+        # OPÇÃO 2: BUSCAR PRODUTOS VIA IA (SEM PERSISTÊNCIA)
         elif opcao == "2":
-            print("\n-- Busca no Catálogo --")
+            print("\n-- Busca no Catálogo com IA --")
             consulta = input("O que você procura? ").strip()
             if not consulta:
                 print("Digite algo para buscar.")
                 continue
 
-            # Extrai tags da própria consulta usando a IA (ou quebra em palavras)
-            tags_busca = gerar_tags_com_ia(consulta)
-            print(f"Tags identificadas para a busca: {tags_busca}")
+            print("Identificando tags com a IA...")
+            tags_busca = gerar_tags_com_ia(consulta, max_tags=4)
+            print(f"Tags geradas para a busca: {tags_busca}")
 
-            resultados = buscar_por_varias_tags(tabela, tags_busca)
+            # Busca e ranqueia por relevância
+            resultados = buscar_por_varias_tags(tabela, tags_busca, max_resultados=10)
 
             if not resultados:
                 print("\nNenhum produto encontrado para essas tags.")
             else:
-                print(f"\nEncontrado(s) {len(resultados)} produto(s):")
+                print(f"\nEncontrado(s) {len(resultados)} produto(s) mais relevante(s):")
                 for prod in resultados:
-                    print("-" * 40)
+                    print("-" * 45)
                     print(f"ID: {prod['id']} | Nome: {prod['nome']}")
-                    print(f"Descrição: {prod['descricao']}")
-                    print(f"Tags: {', '.join(prod['tags'])}")
+                    if prod.get("descricao"):
+                        print(f"Descrição: {prod['descricao']}")
+                    print(f"Tags em memória: {', '.join(prod.get('tags', []))}")
 
         # OPÇÃO 3: LISTAR TODOS
         elif opcao == "3":
-            print("\n-- Lista de Produtos Cadastrados --")
+            print(f"\n-- Produtos no Catálogo ({len(produtos_cadastrados)} itens em memória) --")
             if not produtos_cadastrados:
                 print("Nenhum produto cadastrado até o momento.")
             else:
-                for prod in produtos_cadastrados:
-                    print(f"[{prod['id']}] {prod['nome']} | Tags: {', '.join(prod['tags'])}")
+                limite_exibicao = 20
+                for prod in produtos_cadastrados[:limite_exibicao]:
+                    print(f"[{prod['id']}] {prod['nome']} | Tags: {', '.join(prod.get('tags', []))}")
+                if len(produtos_cadastrados) > limite_exibicao:
+                    print(f"\n... e mais {len(produtos_cadastrados) - limite_exibicao} produtos (total: {len(produtos_cadastrados)}).")
 
         # OPÇÃO 4: DEMONSTRAÇÃO DIDÁTICA DA TABELA HASH
         elif opcao == "4":
