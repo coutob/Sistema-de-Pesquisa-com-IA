@@ -5,16 +5,6 @@ import io
 # Reconfigure stdin to ignore decoding errors that may appear in some terminal settings
 sys.stdin = io.TextIOWrapper(sys.stdin.buffer, encoding='utf-8', errors='ignore')
 
-# ==============================================================
-# PROJETO 4: CATÁLOGO DE PRODUTOS COM TABELA HASH E IA
-# Disciplina: Estrutura de Dados (Sistemas de Informação)
-# Versão: Sem Persistência em Disco (Tudo em Memória / Somente Leitura)
-# ==============================================================
-
-
-# --------------------------------------------------------------
-# 1. FUNÇÕES DA TABELA HASH (ESTRUTURA DE DADOS)
-# --------------------------------------------------------------
 
 def criar_tabela(tamanho=500):
     """
@@ -182,10 +172,7 @@ def carregar_produtos_do_disco():
     Não altera nem grava nada no disco.
     """
     caminhos = [
-        "produtos.json",
-        "/home/stl/Documents/vscode/projeto_ed1/produtos.json",
-        "produtos.json",
-        "/home/stl/produtos.json"
+        "produtos.json"
     ]
     for caminho in caminhos:
         try:
