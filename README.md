@@ -1,5 +1,4 @@
-# Sistema de Pesquisa de E-Commerce categorizado com uso de IA
-# Projeto  – Catálogo de Produtos com Tags Automáticas (Hash Table + IA)
+# Sistema de Pesquisa de E-Commerce ficticío com produtos categorizados usando IA
 
 ## Visão geral
 Este é um pequeno aplicativo de linha de comando escrito em **Python** que demonstra como usar uma **tabela hash** para indexar produtos e buscar por eles usando **tags geradas automaticamente** por um modelo de IA local (Ollama).
