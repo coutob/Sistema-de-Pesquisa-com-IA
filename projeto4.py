@@ -1,5 +1,9 @@
 import json
 import urllib.request
+import sys
+import io
+# Reconfigure stdin to ignore decoding errors that may appear in some terminal settings
+sys.stdin = io.TextIOWrapper(sys.stdin.buffer, encoding='utf-8', errors='ignore')
 
 # ==============================================================
 # PROJETO 4: CATÁLOGO DE PRODUTOS COM TABELA HASH E IA
@@ -178,10 +182,10 @@ def carregar_produtos_do_disco():
     Não altera nem grava nada no disco.
     """
     caminhos = [
-        "produtos_sem_tags.json",
-        "/home/stl/Documents/vscode/projeto_ed1/produtos_sem_tags.json",
-        "produtos(500_itens_aaaaa).json",
-        "/home/stl/produtos(500_itens_aaaaa).json"
+        "produtos.json",
+        "/home/stl/Documents/vscode/projeto_ed1/produtos.json",
+        "produtos.json",
+        "/home/stl/produtos.json"
     ]
     for caminho in caminhos:
         try:
@@ -284,6 +288,8 @@ def main():
 
             print("Identificando tags com a IA...")
             tags_busca = gerar_tags_com_ia(consulta, max_tags=4)
+            # Separe tags compostas (ex.: "sapato social") em palavras individuais
+            tags_busca = [t for tag in tags_busca for t in tag.split() if t]
             print(f"Tags geradas para a busca: {tags_busca}")
 
             # Busca e ranqueia por relevância
