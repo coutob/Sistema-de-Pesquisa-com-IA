@@ -53,9 +53,8 @@ projeto_ed1/
 
 ## Pontos de aprendizagem
 - **Tabela hash**: implementei `criar_tabela`, `funcao_hash`, `inserir_na_tabela` e consultas rápidas por tag.
-- **IA local**: usei a API REST do Ollama para gerar tags a partir de nomes e descrições.
+- **IA local**: usei a API do próprio Ollama para gerar tags a partir de nomes e descrições.
 - **Persistência zero**: todo o catálogo fica em RAM, o que facilita testes e evita escrita acidental.
-- **Fallback**: quando o Ollama está offline, o programa recorre a um gerador simples de palavras‑chave.
 
 ---
-*Feito por um estudante curioso que ainda tem muito a aprender, mas já deu os primeiros passos na união de estruturas de dados e IA.*
+*Feito por alguém que ainda tem muito a aprender, mas está feliz por ter conseguido criar um primeiro programa funcional, útil e com implementação de IA*
