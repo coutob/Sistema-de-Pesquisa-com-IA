@@ -1,0 +1,3002 @@
+[
+  {
+    "id": 1,
+    "nome": "Sapato social preto",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 2,
+    "nome": "tenis azul corrida",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 3,
+    "nome": "Sapato social marrom",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 4,
+    "nome": "Sapato casual caramelo",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 5,
+    "nome": "Tênis esportivo branco",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 6,
+    "nome": "Tênis preto caminhada",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 7,
+    "nome": "Tênis cinza casual",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 8,
+    "nome": "Sapatênis marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 9,
+    "nome": "Sapatênis branco",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 10,
+    "nome": "Sapatênis café",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 11,
+    "nome": "Camisa social branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 12,
+    "nome": "Camisa social azul clara",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 13,
+    "nome": "Camisa social preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 14,
+    "nome": "Camisa social vinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 15,
+    "nome": "Camiseta básica preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 16,
+    "nome": "Camiseta branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 17,
+    "nome": "Camiseta verde",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 18,
+    "nome": "Camiseta azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 19,
+    "nome": "Camiseta cinza mescla",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 20,
+    "nome": "Calça jeans azul escura",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 21,
+    "nome": "Calça jeans preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 22,
+    "nome": "Calça chino bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 23,
+    "nome": "Calça de sarja verde",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 24,
+    "nome": "Calça social cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 25,
+    "nome": "Calça chino azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 26,
+    "nome": "Bermuda jeans azul",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 27,
+    "nome": "Bermuda sarja bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 28,
+    "nome": "Bermuda preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 29,
+    "nome": "Bermuda verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 30,
+    "nome": "Bermuda azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 31,
+    "nome": "Camiseta vermelha",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 32,
+    "nome": "Camisa social lilás",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 33,
+    "nome": "Meia cano curto branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 34,
+    "nome": "Meia cano curto preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 35,
+    "nome": "Meia social preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 36,
+    "nome": "Meia social cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 37,
+    "nome": "Meia esportiva branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 38,
+    "nome": "Meia esportiva preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 39,
+    "nome": "Meia cano médio azul",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 40,
+    "nome": "Boné preto básico",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 41,
+    "nome": "Boné branco",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 42,
+    "nome": "Boné azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 43,
+    "nome": "Boné bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 44,
+    "nome": "Cinto preto",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 45,
+    "nome": "Cinto marrom",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 46,
+    "nome": "Carteira preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 47,
+    "nome": "Carteira marrom",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 48,
+    "nome": "Mochila preta básica",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 49,
+    "nome": "Pochete preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 50,
+    "nome": "Pijama curto azul",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 51,
+    "nome": "Pijama curto cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 52,
+    "nome": "Pijama longo preto",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 53,
+    "nome": "Pijama longo xadrez",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 54,
+    "nome": "Regata branca básica",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 55,
+    "nome": "Regata preta básica",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 56,
+    "nome": "Regata cinza mescla",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 57,
+    "nome": "Regata verde",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 58,
+    "nome": "Jaqueta jeans azul",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 59,
+    "nome": "Jaqueta preta básica",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 60,
+    "nome": "Jaqueta corta vento cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 61,
+    "nome": "Jaqueta marrom",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 62,
+    "nome": "Jaqueta puffer verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 63,
+    "nome": "Moletom preto com capuz",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 64,
+    "nome": "Moletom cinza básico",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 65,
+    "nome": "Moletom azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 66,
+    "nome": "Moletom verde",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 67,
+    "nome": "Blusa de frio bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 68,
+    "nome": "Suéter preto",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 69,
+    "nome": "Suéter vinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 70,
+    "nome": "Cardigan cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 71,
+    "nome": "Casaco de lã marrom",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 72,
+    "nome": "Colete preto",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 73,
+    "nome": "Blusão esportivo azul",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 74,
+    "nome": "Jaqueta bomber vinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 75,
+    "nome": "Moletom bege oversized",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 76,
+    "nome": "Meia cano curto algodão preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 77,
+    "nome": "Meia cano curto algodão branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 78,
+    "nome": "Meia cano curto algodão cinza mescla",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 79,
+    "nome": "Meia cano curto algodão azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 80,
+    "nome": "Meia cano curto algodão bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 81,
+    "nome": "Meia cano médio algodão preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 82,
+    "nome": "Meia cano médio algodão branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 83,
+    "nome": "Meia cano médio algodão cinza mescla",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 84,
+    "nome": "Meia cano médio algodão azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 85,
+    "nome": "Meia cano médio algodão bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 86,
+    "nome": "Meia cano longo canelada preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 87,
+    "nome": "Meia cano longo canelada branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 88,
+    "nome": "Meia cano longo canelada cinza mescla",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 89,
+    "nome": "Meia cano longo canelada azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 90,
+    "nome": "Meia cano longo canelada bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 91,
+    "nome": "Meia invisível algodão preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 92,
+    "nome": "Meia invisível algodão branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 93,
+    "nome": "Meia invisível algodão cinza mescla",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 94,
+    "nome": "Meia invisível algodão azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 95,
+    "nome": "Meia invisível algodão bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 96,
+    "nome": "Meia esportiva dry fit preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 97,
+    "nome": "Meia esportiva dry fit branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 98,
+    "nome": "Meia esportiva dry fit cinza mescla",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 99,
+    "nome": "Meia esportiva dry fit azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 100,
+    "nome": "Meia esportiva dry fit bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 101,
+    "nome": "Boné de sarja aba curva preto",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 102,
+    "nome": "Boné de sarja aba curva branco",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 103,
+    "nome": "Boné de sarja aba curva azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 104,
+    "nome": "Boné de sarja aba curva bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 105,
+    "nome": "Boné de sarja aba curva verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 106,
+    "nome": "Boné trucker telado preto",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 107,
+    "nome": "Boné trucker telado branco",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 108,
+    "nome": "Boné trucker telado azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 109,
+    "nome": "Boné trucker telado bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 110,
+    "nome": "Boné trucker telado verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 111,
+    "nome": "Boné dad hat de algodão preto",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 112,
+    "nome": "Boné dad hat de algodão branco",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 113,
+    "nome": "Boné dad hat de algodão azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 114,
+    "nome": "Boné dad hat de algodão bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 115,
+    "nome": "Boné dad hat de algodão verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 116,
+    "nome": "Boné de brim aba reta preto",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 117,
+    "nome": "Boné de brim aba reta branco",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 118,
+    "nome": "Boné de brim aba reta azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 119,
+    "nome": "Boné de brim aba reta bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 120,
+    "nome": "Boné de brim aba reta verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 121,
+    "nome": "Boné esportivo dry fit preto",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 122,
+    "nome": "Boné esportivo dry fit branco",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 123,
+    "nome": "Boné esportivo dry fit azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 124,
+    "nome": "Boné esportivo dry fit bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 125,
+    "nome": "Boné esportivo dry fit verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 126,
+    "nome": "Legging suplex cintura alta preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 127,
+    "nome": "Legging suplex cintura alta grafite",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 128,
+    "nome": "Legging suplex cintura alta azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 129,
+    "nome": "Legging suplex cintura alta vinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 130,
+    "nome": "Legging suplex cintura alta verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 131,
+    "nome": "Legging poliamida seamless preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 132,
+    "nome": "Legging poliamida seamless grafite",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 133,
+    "nome": "Legging poliamida seamless azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 134,
+    "nome": "Legging poliamida seamless vinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 135,
+    "nome": "Legging poliamida seamless verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 136,
+    "nome": "Legging cotton básica preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 137,
+    "nome": "Legging cotton básica grafite",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 138,
+    "nome": "Legging cotton básica azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 139,
+    "nome": "Legging cotton básica vinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 140,
+    "nome": "Legging cotton básica verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 141,
+    "nome": "Legging cirrê brilhante preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 142,
+    "nome": "Legging cirrê brilhante grafite",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 143,
+    "nome": "Legging cirrê brilhante azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 144,
+    "nome": "Legging cirrê brilhante vinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 145,
+    "nome": "Legging cirrê brilhante verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 146,
+    "nome": "Legging dry fit esportiva preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 147,
+    "nome": "Legging dry fit esportiva grafite",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 148,
+    "nome": "Legging dry fit esportiva azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 149,
+    "nome": "Legging dry fit esportiva vinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 150,
+    "nome": "Legging dry fit esportiva verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 151,
+    "nome": "Calça jeans skinny denim azul claro",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 152,
+    "nome": "Calça jeans skinny denim azul médio",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 153,
+    "nome": "Calça jeans skinny denim azul escuro",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 154,
+    "nome": "Calça jeans skinny denim preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 155,
+    "nome": "Calça jeans skinny denim cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 156,
+    "nome": "Calça jeans slim denim azul claro",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 157,
+    "nome": "Calça jeans slim denim azul médio",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 158,
+    "nome": "Calça jeans slim denim azul escuro",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 159,
+    "nome": "Calça jeans slim denim preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 160,
+    "nome": "Calça jeans slim denim cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 161,
+    "nome": "Calça jeans reta denim azul claro",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 162,
+    "nome": "Calça jeans reta denim azul médio",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 163,
+    "nome": "Calça jeans reta denim azul escuro",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 164,
+    "nome": "Calça jeans reta denim preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 165,
+    "nome": "Calça jeans reta denim cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 166,
+    "nome": "Calça jeans wide leg denim azul claro",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 167,
+    "nome": "Calça jeans wide leg denim azul médio",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 168,
+    "nome": "Calça jeans wide leg denim azul escuro",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 169,
+    "nome": "Calça jeans wide leg denim preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 170,
+    "nome": "Calça jeans wide leg denim cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 171,
+    "nome": "Calça jeans mom jeans denim azul claro",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 172,
+    "nome": "Calça jeans mom jeans denim azul médio",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 173,
+    "nome": "Calça jeans mom jeans denim azul escuro",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 174,
+    "nome": "Calça jeans mom jeans denim preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 175,
+    "nome": "Calça jeans mom jeans denim cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 176,
+    "nome": "Calça jogger de moletom flanelado preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 177,
+    "nome": "Calça jogger de moletom flanelado cinza mescla",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 178,
+    "nome": "Calça jogger de moletom flanelado bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 179,
+    "nome": "Calça jogger de moletom flanelado verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 180,
+    "nome": "Calça jogger de moletom flanelado azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 181,
+    "nome": "Calça jogger de sarja preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 182,
+    "nome": "Calça jogger de sarja cinza mescla",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 183,
+    "nome": "Calça jogger de sarja bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 184,
+    "nome": "Calça jogger de sarja verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 185,
+    "nome": "Calça jogger de sarja azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 186,
+    "nome": "Calça jogger de tactel preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 187,
+    "nome": "Calça jogger de tactel cinza mescla",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 188,
+    "nome": "Calça jogger de tactel bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 189,
+    "nome": "Calça jogger de tactel verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 190,
+    "nome": "Calça jogger de tactel azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 191,
+    "nome": "Calça jogger cargo de algodão preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 192,
+    "nome": "Calça jogger cargo de algodão cinza mescla",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 193,
+    "nome": "Calça jogger cargo de algodão bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 194,
+    "nome": "Calça jogger cargo de algodão verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 195,
+    "nome": "Calça jogger cargo de algodão azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 196,
+    "nome": "Calça jogger de nylon leve preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 197,
+    "nome": "Calça jogger de nylon leve cinza mescla",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 198,
+    "nome": "Calça jogger de nylon leve bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 199,
+    "nome": "Calça jogger de nylon leve verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 200,
+    "nome": "Calça jogger de nylon leve azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 201,
+    "nome": "Calça chino sarja slim bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 202,
+    "nome": "Calça chino sarja slim preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 203,
+    "nome": "Calça chino sarja slim azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 204,
+    "nome": "Calça chino sarja slim caqui",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 205,
+    "nome": "Calça chino sarja slim cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 206,
+    "nome": "Calça chino sarja reta bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 207,
+    "nome": "Calça chino sarja reta preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 208,
+    "nome": "Calça chino sarja reta azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 209,
+    "nome": "Calça chino sarja reta caqui",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 210,
+    "nome": "Calça chino sarja reta cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 211,
+    "nome": "Calça chino algodão stretch bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 212,
+    "nome": "Calça chino algodão stretch preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 213,
+    "nome": "Calça chino algodão stretch azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 214,
+    "nome": "Calça chino algodão stretch caqui",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 215,
+    "nome": "Calça chino algodão stretch cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 216,
+    "nome": "Calça chino sarja relaxed bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 217,
+    "nome": "Calça chino sarja relaxed preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 218,
+    "nome": "Calça chino sarja relaxed azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 219,
+    "nome": "Calça chino sarja relaxed caqui",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 220,
+    "nome": "Calça chino sarja relaxed cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 221,
+    "nome": "Calça chino sarja cropped bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 222,
+    "nome": "Calça chino sarja cropped preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 223,
+    "nome": "Calça chino sarja cropped azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 224,
+    "nome": "Calça chino sarja cropped caqui",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 225,
+    "nome": "Calça chino sarja cropped cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 226,
+    "nome": "Calça social alfaiataria slim preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 227,
+    "nome": "Calça social alfaiataria slim cinza chumbo",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 228,
+    "nome": "Calça social alfaiataria slim grafite",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 229,
+    "nome": "Calça social alfaiataria slim azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 230,
+    "nome": "Calça social alfaiataria slim bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 231,
+    "nome": "Calça social alfaiataria reta preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 232,
+    "nome": "Calça social alfaiataria reta cinza chumbo",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 233,
+    "nome": "Calça social alfaiataria reta grafite",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 234,
+    "nome": "Calça social alfaiataria reta azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 235,
+    "nome": "Calça social alfaiataria reta bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 236,
+    "nome": "Calça social viscose com elastano preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 237,
+    "nome": "Calça social viscose com elastano cinza chumbo",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 238,
+    "nome": "Calça social viscose com elastano grafite",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 239,
+    "nome": "Calça social viscose com elastano azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 240,
+    "nome": "Calça social viscose com elastano bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 241,
+    "nome": "Calça social lã fria preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 242,
+    "nome": "Calça social lã fria cinza chumbo",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 243,
+    "nome": "Calça social lã fria grafite",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 244,
+    "nome": "Calça social lã fria azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 245,
+    "nome": "Calça social lã fria bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 246,
+    "nome": "Calça social sarja de alfaiataria preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 247,
+    "nome": "Calça social sarja de alfaiataria cinza chumbo",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 248,
+    "nome": "Calça social sarja de alfaiataria grafite",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 249,
+    "nome": "Calça social sarja de alfaiataria azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 250,
+    "nome": "Calça social sarja de alfaiataria bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 251,
+    "nome": "Camiseta algodão penteado regular preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 252,
+    "nome": "Camiseta algodão penteado regular branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 253,
+    "nome": "Camiseta algodão penteado regular cinza mescla",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 254,
+    "nome": "Camiseta algodão penteado regular azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 255,
+    "nome": "Camiseta algodão penteado regular verde",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 256,
+    "nome": "Camiseta oversized algodão preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 257,
+    "nome": "Camiseta oversized algodão branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 258,
+    "nome": "Camiseta oversized algodão cinza mescla",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 259,
+    "nome": "Camiseta oversized algodão azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 260,
+    "nome": "Camiseta oversized algodão verde",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 261,
+    "nome": "Camiseta heavy cotton preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 262,
+    "nome": "Camiseta heavy cotton branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 263,
+    "nome": "Camiseta heavy cotton cinza mescla",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 264,
+    "nome": "Camiseta heavy cotton azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 265,
+    "nome": "Camiseta heavy cotton verde",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 266,
+    "nome": "Camiseta malha pima preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 267,
+    "nome": "Camiseta malha pima branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 268,
+    "nome": "Camiseta malha pima cinza mescla",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 269,
+    "nome": "Camiseta malha pima azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 270,
+    "nome": "Camiseta malha pima verde",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 271,
+    "nome": "Camiseta malha flamê preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 272,
+    "nome": "Camiseta malha flamê branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 273,
+    "nome": "Camiseta malha flamê cinza mescla",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 274,
+    "nome": "Camiseta malha flamê azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 275,
+    "nome": "Camiseta malha flamê verde",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 276,
+    "nome": "Camisa oxford manga longa branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 277,
+    "nome": "Camisa oxford manga longa azul clara",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 278,
+    "nome": "Camisa oxford manga longa preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 279,
+    "nome": "Camisa oxford manga longa bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 280,
+    "nome": "Camisa oxford manga longa vinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 281,
+    "nome": "Camisa tricoline slim branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 282,
+    "nome": "Camisa tricoline slim azul clara",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 283,
+    "nome": "Camisa tricoline slim preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 284,
+    "nome": "Camisa tricoline slim bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 285,
+    "nome": "Camisa tricoline slim vinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 286,
+    "nome": "Camisa linho misto branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 287,
+    "nome": "Camisa linho misto azul clara",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 288,
+    "nome": "Camisa linho misto preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 289,
+    "nome": "Camisa linho misto bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 290,
+    "nome": "Camisa linho misto vinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 291,
+    "nome": "Camisa flanela xadrez branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 292,
+    "nome": "Camisa flanela xadrez azul clara",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 293,
+    "nome": "Camisa flanela xadrez preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 294,
+    "nome": "Camisa flanela xadrez bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 295,
+    "nome": "Camisa flanela xadrez vinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 296,
+    "nome": "Camisa viscose estampada branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 297,
+    "nome": "Camisa viscose estampada azul clara",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 298,
+    "nome": "Camisa viscose estampada preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 299,
+    "nome": "Camisa viscose estampada bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 300,
+    "nome": "Camisa viscose estampada vinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 301,
+    "nome": "Polo piquet de algodão branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 302,
+    "nome": "Polo piquet de algodão preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 303,
+    "nome": "Polo piquet de algodão azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 304,
+    "nome": "Polo piquet de algodão bordô",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 305,
+    "nome": "Polo piquet de algodão cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 306,
+    "nome": "Polo malha pima branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 307,
+    "nome": "Polo malha pima preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 308,
+    "nome": "Polo malha pima azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 309,
+    "nome": "Polo malha pima bordô",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 310,
+    "nome": "Polo malha pima cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 311,
+    "nome": "Polo algodão stretch branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 312,
+    "nome": "Polo algodão stretch preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 313,
+    "nome": "Polo algodão stretch azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 314,
+    "nome": "Polo algodão stretch bordô",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 315,
+    "nome": "Polo algodão stretch cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 316,
+    "nome": "Polo malha fria branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 317,
+    "nome": "Polo malha fria preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 318,
+    "nome": "Polo malha fria azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 319,
+    "nome": "Polo malha fria bordô",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 320,
+    "nome": "Polo malha fria cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 321,
+    "nome": "Polo piquet slim branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 322,
+    "nome": "Polo piquet slim preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 323,
+    "nome": "Polo piquet slim azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 324,
+    "nome": "Polo piquet slim bordô",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 325,
+    "nome": "Polo piquet slim cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 326,
+    "nome": "Moletom flanelado com capuz preto",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 327,
+    "nome": "Moletom flanelado com capuz cinza mescla",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 328,
+    "nome": "Moletom flanelado com capuz bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 329,
+    "nome": "Moletom flanelado com capuz verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 330,
+    "nome": "Moletom flanelado com capuz azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 331,
+    "nome": "Moletom careca sem capuz preto",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 332,
+    "nome": "Moletom careca sem capuz cinza mescla",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 333,
+    "nome": "Moletom careca sem capuz bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 334,
+    "nome": "Moletom careca sem capuz verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 335,
+    "nome": "Moletom careca sem capuz azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 336,
+    "nome": "Moletom canguru oversized preto",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 337,
+    "nome": "Moletom canguru oversized cinza mescla",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 338,
+    "nome": "Moletom canguru oversized bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 339,
+    "nome": "Moletom canguru oversized verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 340,
+    "nome": "Moletom canguru oversized azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 341,
+    "nome": "Moletom gola alta preto",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 342,
+    "nome": "Moletom gola alta cinza mescla",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 343,
+    "nome": "Moletom gola alta bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 344,
+    "nome": "Moletom gola alta verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 345,
+    "nome": "Moletom gola alta azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 346,
+    "nome": "Moletom de algodão felpado preto",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 347,
+    "nome": "Moletom de algodão felpado cinza mescla",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 348,
+    "nome": "Moletom de algodão felpado bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 349,
+    "nome": "Moletom de algodão felpado verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 350,
+    "nome": "Moletom de algodão felpado azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 351,
+    "nome": "Jaqueta jeans oversized azul jeans",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 352,
+    "nome": "Jaqueta jeans oversized preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 353,
+    "nome": "Jaqueta jeans oversized bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 354,
+    "nome": "Jaqueta jeans oversized verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 355,
+    "nome": "Jaqueta jeans oversized cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 356,
+    "nome": "Jaqueta sarja trucker azul jeans",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 357,
+    "nome": "Jaqueta sarja trucker preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 358,
+    "nome": "Jaqueta sarja trucker bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 359,
+    "nome": "Jaqueta sarja trucker verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 360,
+    "nome": "Jaqueta sarja trucker cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 361,
+    "nome": "Jaqueta nylon corta vento azul jeans",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 362,
+    "nome": "Jaqueta nylon corta vento preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 363,
+    "nome": "Jaqueta nylon corta vento bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 364,
+    "nome": "Jaqueta nylon corta vento verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 365,
+    "nome": "Jaqueta nylon corta vento cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 366,
+    "nome": "Jaqueta puffer acolchoada azul jeans",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 367,
+    "nome": "Jaqueta puffer acolchoada preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 368,
+    "nome": "Jaqueta puffer acolchoada bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 369,
+    "nome": "Jaqueta puffer acolchoada verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 370,
+    "nome": "Jaqueta puffer acolchoada cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 371,
+    "nome": "Jaqueta bomber de tactel azul jeans",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 372,
+    "nome": "Jaqueta bomber de tactel preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 373,
+    "nome": "Jaqueta bomber de tactel bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 374,
+    "nome": "Jaqueta bomber de tactel verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 375,
+    "nome": "Jaqueta bomber de tactel cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 376,
+    "nome": "Bermuda jeans denim azul jeans",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 377,
+    "nome": "Bermuda jeans denim preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 378,
+    "nome": "Bermuda jeans denim bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 379,
+    "nome": "Bermuda jeans denim verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 380,
+    "nome": "Bermuda jeans denim cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 381,
+    "nome": "Bermuda sarja chino azul jeans",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 382,
+    "nome": "Bermuda sarja chino preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 383,
+    "nome": "Bermuda sarja chino bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 384,
+    "nome": "Bermuda sarja chino verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 385,
+    "nome": "Bermuda sarja chino cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 386,
+    "nome": "Bermuda moletom felpado azul jeans",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 387,
+    "nome": "Bermuda moletom felpado preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 388,
+    "nome": "Bermuda moletom felpado bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 389,
+    "nome": "Bermuda moletom felpado verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 390,
+    "nome": "Bermuda moletom felpado cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 391,
+    "nome": "Bermuda tactel leve azul jeans",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 392,
+    "nome": "Bermuda tactel leve preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 393,
+    "nome": "Bermuda tactel leve bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 394,
+    "nome": "Bermuda tactel leve verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 395,
+    "nome": "Bermuda tactel leve cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 396,
+    "nome": "Bermuda cargo de sarja azul jeans",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 397,
+    "nome": "Bermuda cargo de sarja preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 398,
+    "nome": "Bermuda cargo de sarja bege",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 399,
+    "nome": "Bermuda cargo de sarja verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 400,
+    "nome": "Bermuda cargo de sarja cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 401,
+    "nome": "Shorts suplex fitness preto",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 402,
+    "nome": "Shorts suplex fitness cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 403,
+    "nome": "Shorts suplex fitness azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 404,
+    "nome": "Shorts suplex fitness rosa",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 405,
+    "nome": "Shorts suplex fitness verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 406,
+    "nome": "Shorts poliamida dry fit preto",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 407,
+    "nome": "Shorts poliamida dry fit cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 408,
+    "nome": "Shorts poliamida dry fit azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 409,
+    "nome": "Shorts poliamida dry fit rosa",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 410,
+    "nome": "Shorts poliamida dry fit verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 411,
+    "nome": "Shorts moletinho de algodão preto",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 412,
+    "nome": "Shorts moletinho de algodão cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 413,
+    "nome": "Shorts moletinho de algodão azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 414,
+    "nome": "Shorts moletinho de algodão rosa",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 415,
+    "nome": "Shorts moletinho de algodão verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 416,
+    "nome": "Shorts sarja cintura alta preto",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 417,
+    "nome": "Shorts sarja cintura alta cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 418,
+    "nome": "Shorts sarja cintura alta azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 419,
+    "nome": "Shorts sarja cintura alta rosa",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 420,
+    "nome": "Shorts sarja cintura alta verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 421,
+    "nome": "Shorts jeans cintura alta preto",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 422,
+    "nome": "Shorts jeans cintura alta cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 423,
+    "nome": "Shorts jeans cintura alta azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 424,
+    "nome": "Shorts jeans cintura alta rosa",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 425,
+    "nome": "Shorts jeans cintura alta verde oliva",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 426,
+    "nome": "Regata algodão básica branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 427,
+    "nome": "Regata algodão básica preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 428,
+    "nome": "Regata algodão básica cinza mescla",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 429,
+    "nome": "Regata algodão básica azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 430,
+    "nome": "Regata algodão básica verde",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 431,
+    "nome": "Regata canelada branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 432,
+    "nome": "Regata canelada preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 433,
+    "nome": "Regata canelada cinza mescla",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 434,
+    "nome": "Regata canelada azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 435,
+    "nome": "Regata canelada verde",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 436,
+    "nome": "Regata oversized de algodão branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 437,
+    "nome": "Regata oversized de algodão preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 438,
+    "nome": "Regata oversized de algodão cinza mescla",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 439,
+    "nome": "Regata oversized de algodão azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 440,
+    "nome": "Regata oversized de algodão verde",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 441,
+    "nome": "Regata dry fit esportiva branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 442,
+    "nome": "Regata dry fit esportiva preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 443,
+    "nome": "Regata dry fit esportiva cinza mescla",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 444,
+    "nome": "Regata dry fit esportiva azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 445,
+    "nome": "Regata dry fit esportiva verde",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 446,
+    "nome": "Regata malha pima branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 447,
+    "nome": "Regata malha pima preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 448,
+    "nome": "Regata malha pima cinza mescla",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 449,
+    "nome": "Regata malha pima azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 450,
+    "nome": "Regata malha pima verde",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 451,
+    "nome": "Pijama malha de algodão curto azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 452,
+    "nome": "Pijama malha de algodão curto cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 453,
+    "nome": "Pijama malha de algodão curto preto",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 454,
+    "nome": "Pijama malha de algodão curto vinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 455,
+    "nome": "Pijama malha de algodão curto xadrez azul",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 456,
+    "nome": "Pijama viscolycra curto azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 457,
+    "nome": "Pijama viscolycra curto cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 458,
+    "nome": "Pijama viscolycra curto preto",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 459,
+    "nome": "Pijama viscolycra curto vinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 460,
+    "nome": "Pijama viscolycra curto xadrez azul",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 461,
+    "nome": "Pijama moletinho longo azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 462,
+    "nome": "Pijama moletinho longo cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 463,
+    "nome": "Pijama moletinho longo preto",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 464,
+    "nome": "Pijama moletinho longo vinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 465,
+    "nome": "Pijama moletinho longo xadrez azul",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 466,
+    "nome": "Pijama flanela xadrez azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 467,
+    "nome": "Pijama flanela xadrez cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 468,
+    "nome": "Pijama flanela xadrez preto",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 469,
+    "nome": "Pijama flanela xadrez vinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 470,
+    "nome": "Pijama flanela xadrez xadrez azul",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 471,
+    "nome": "Pijama malha fria longo azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 472,
+    "nome": "Pijama malha fria longo cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 473,
+    "nome": "Pijama malha fria longo preto",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 474,
+    "nome": "Pijama malha fria longo vinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 475,
+    "nome": "Pijama malha fria longo xadrez azul",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 476,
+    "nome": "Cueca boxer algodão preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 477,
+    "nome": "Cueca boxer algodão branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 478,
+    "nome": "Cueca boxer algodão cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 479,
+    "nome": "Cueca boxer algodão azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 480,
+    "nome": "Cueca boxer algodão vinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 481,
+    "nome": "Cueca boxer microfibra preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 482,
+    "nome": "Cueca boxer microfibra branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 483,
+    "nome": "Cueca boxer microfibra cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 484,
+    "nome": "Cueca boxer microfibra azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 485,
+    "nome": "Cueca boxer microfibra vinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 486,
+    "nome": "Cueca slip algodão preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 487,
+    "nome": "Cueca slip algodão branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 488,
+    "nome": "Cueca slip algodão cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 489,
+    "nome": "Cueca slip algodão azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 490,
+    "nome": "Cueca slip algodão vinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 491,
+    "nome": "Cueca boxer modal preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 492,
+    "nome": "Cueca boxer modal branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 493,
+    "nome": "Cueca boxer modal cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 494,
+    "nome": "Cueca boxer modal azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 495,
+    "nome": "Cueca boxer modal vinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 496,
+    "nome": "Cueca boxer sem costura preta",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 497,
+    "nome": "Cueca boxer sem costura branca",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 498,
+    "nome": "Cueca boxer sem costura cinza",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 499,
+    "nome": "Cueca boxer sem costura azul marinho",
+    "descricao": "",
+    "tags": []
+  },
+  {
+    "id": 500,
+    "nome": "Cueca boxer sem costura vinho",
+    "descricao": "",
+    "tags": []
+  }
+]
