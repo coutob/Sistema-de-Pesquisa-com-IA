@@ -20,8 +20,6 @@ Estou no segundo período do curso de **Sistemas de Informação** e esse é meu
 ### Passo a passo
 ```bash
 # 1. Clone o repositório (ou copie a pasta)
-git clone <seu-repositorio>.git   # ou copie a pasta projeto_ed1
-cd projeto_ed1
 
 # 2. Instale dependências (apenas a padrão da lib std, nada extra)
 #    Não há pacotes externos, então nada a instalar.
@@ -29,7 +27,7 @@ cd projeto_ed1
 # 3. Certifique‑se de que o Ollama está ativo
 ollama serve &   # deixa o servidor rodando em background
 
-# 4. Execute o programa
+# 4. Execute o programa pelo terminal
 python projeto4.py
 ```
 
