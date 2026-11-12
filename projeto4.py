@@ -1,24 +1,19 @@
+
 import json
 import urllib.request
 import sys
 import io
-# Reconfigure stdin to ignore decoding errors that may appear in some terminal settings
+
 sys.stdin = io.TextIOWrapper(sys.stdin.buffer, encoding='utf-8', errors='ignore')
 
 
 def criar_tabela(tamanho=500):
-    """
-    Cria uma Tabela Hash com um vetor de tamanho fixo inicial (padrão: 500).
-    Cada bucket é uma lista para tratar colisões por encadeamento.
-    """
+    # Cria a tabela com listas para guardar os produtos
     return [[] for _ in range(tamanho)]
 
 
 def funcao_hash(tag, tamanho=500):
-    """
-    Função Hash Simples (Soma dos códigos ASCII):
-    Soma os valores ASCII dos caracteres e calcula o resto da divisão.
-    """
+    # Soma os caracteres e calcula a posição na tabela
     soma = 0
     for letra in tag:
         soma += ord(letra)
@@ -26,10 +21,6 @@ def funcao_hash(tag, tamanho=500):
 
 
 def inserir_na_tabela(tabela, tag, produto):
-    """
-    Insere um produto associado a uma tag na Tabela Hash em memória.
-    Trata colisão por encadeamento.
-    """
     tag = tag.strip().lower()
     if not tag:
         return
@@ -37,16 +28,16 @@ def inserir_na_tabela(tabela, tag, produto):
     indice = funcao_hash(tag, len(tabela))
     bucket = tabela[indice]
 
-    # 1. Verifica se a tag já existe nesse bucket
+    # Verifica se a tag já está cadastrada
     for item in bucket:
         if item["tag"] == tag:
             for p in item["produtos"]:
                 if p["id"] == produto["id"]:
-                    return  # Evita duplicar o produto sob a mesma tag
+                    return
             item["produtos"].append(produto)
             return
 
-    # 2. Se a tag não existe no bucket, cria uma nova entrada
+    # Adiciona uma nova tag na tabela
     bucket.append({
         "tag": tag,
         "produtos": [produto]
@@ -54,7 +45,6 @@ def inserir_na_tabela(tabela, tag, produto):
 
 
 def buscar_por_tag(tabela, tag):
-    """Busca produtos associados a uma tag específica."""
     tag = tag.strip().lower()
     indice = funcao_hash(tag, len(tabela))
     bucket = tabela[indice]
@@ -66,11 +56,7 @@ def buscar_por_tag(tabela, tag):
 
 
 def buscar_por_varias_tags(tabela, tags, max_resultados=10):
-    """
-    Busca produtos associados a uma ou mais tags.
-    Ranqueia por relevância: produtos que combinam com mais tags aparecem primeiro.
-    """
-    relevancia = {}  # id -> {"produto": prod, "pontos": int}
+    relevancia = {}
 
     for tag in tags:
         tag_limpa = tag.strip().lower()
@@ -84,7 +70,7 @@ def buscar_por_varias_tags(tabela, tags, max_resultados=10):
     if not relevancia:
         return []
 
-    # Ordena decrescente pelo número de tags correspondentes (maior relevância no topo)
+    # Mostra primeiro os produtos que combinaram com mais tags
     ordenados = sorted(
         relevancia.values(),
         key=lambda item: item["pontos"],
@@ -95,7 +81,6 @@ def buscar_por_varias_tags(tabela, tags, max_resultados=10):
 
 
 def inspecionar_tabela(tabela):
-    """Exibe no terminal a distribuição dos buckets, colisões e nós em memória."""
     print("\n-- Estrutura Interna da Tabela Hash (Buckets e Colisões) --")
     buckets_ocupados = 0
 
@@ -108,22 +93,14 @@ def inspecionar_tabela(tabela):
     print(f"\nTotal de buckets ocupados: {buckets_ocupados} de {len(tabela)}")
 
 
-# --------------------------------------------------------------
-# 2. INTEGRAÇÃO COM IA E GERAÇÃO DE TAGS
-# --------------------------------------------------------------
-
 def extrair_tags_simples(texto):
-    """Extrai palavras-chave significativas para uso em memória."""
     palavras = texto.lower().replace(",", " ").replace(".", " ").replace("-", " ").split()
     stopwords = {"para", "com", "sem", "por", "dos", "das", "uma", "uns", "que", "mais", "manga"}
     return [p for p in palavras if len(p) > 2 and p not in stopwords]
 
 
 def gerar_tags_com_ia(texto, modelo="qwen2.5-coder:1.5b", max_tags=5):
-    """
-    Envia requisição para a IA (Ollama local) gerar tags a partir do texto de consulta.
-    Retorna apenas a lista de tags em memória, sem persistência.
-    """
+    # Monta o pedido que será enviado para a IA
     prompt = (
         f"Extraia de 2 a {max_tags} palavras-chave curtas e diretas sobre este produto ou busca: '{texto}'. "
         "Responda SOMENTE em JSON no formato: {\"tags\": [\"tag1\", \"tag2\"]}. "
@@ -155,22 +132,15 @@ def gerar_tags_com_ia(texto, modelo="qwen2.5-coder:1.5b", max_tags=5):
             if tags_finais:
                 return tags_finais[:max_tags]
     except Exception:
-        # Fallback de segurança: caso o Ollama esteja offline
+        # Se a IA não responder, o programa continua normalmente
         pass
 
-    # Fallback automático: extrai as palavras-chave do texto
+    # Usa as palavras da própria busca como alternativa
     return extrair_tags_simples(texto)[:max_tags]
 
 
-# --------------------------------------------------------------
-# 3. LEITURA DE DADOS INICIAIS (SOMENTE LEITURA - SEM GRAVAÇÃO)
-# --------------------------------------------------------------
-
 def carregar_produtos_do_disco():
-    """
-    Lê os produtos do arquivo JSON original apenas para carregar na memória.
-    Não altera nem grava nada no disco.
-    """
+    # Lê os produtos do arquivo JSON
     caminhos = [
         "produtos.json"
     ]
@@ -184,23 +154,18 @@ def carregar_produtos_do_disco():
     return [], "Nenhum arquivo encontrado"
 
 
-# --------------------------------------------------------------
-# 4. PROGRAMA PRINCIPAL (MENU NO TERMINAL)
-# --------------------------------------------------------------
-
 def main():
     tabela = criar_tabela(500)
     produtos_cadastrados, arquivo_origem = carregar_produtos_do_disco()
     proximo_id = 1
 
-    # Indexa os produtos na Tabela Hash exclusivamente em memória RAM
+    # Coloca os produtos do JSON na tabela hash
     for prod in produtos_cadastrados:
-        # Se o produto não tiver tags predefinidas no arquivo, gera em memória pelo nome
         tags = prod.get("tags")
         if not tags:
             texto = f"{prod.get('nome', '')} {prod.get('descricao', '')}"
             tags = extrair_tags_simples(texto)
-            prod["tags"] = tags  # apenas no objeto em memória
+            prod["tags"] = tags
 
         for tag in tags:
             inserir_na_tabela(tabela, tag, prod)
@@ -227,7 +192,6 @@ def main():
 
         opcao = input("\nEscolha uma opção: ").strip()
 
-        # OPÇÃO 1: CADASTRAR PRODUTO (APENAS EM MEMÓRIA)
         if opcao == "1":
             print("\n-- Cadastro de Produto --")
             nome = input("Nome do produto: ").strip()
@@ -241,7 +205,6 @@ def main():
             tags = gerar_tags_com_ia(f"{nome}. {descricao}")
             print(f"Tags geradas pela IA: {tags}")
 
-            # Permite ao usuário adicionar tags extras se quiser
             extras = input("Deseja adicionar mais tags separadas por vírgula? (Enter para pular): ").strip()
             if extras:
                 for extra in extras.split(","):
@@ -258,14 +221,13 @@ def main():
             proximo_id += 1
             produtos_cadastrados.append(novo_produto)
 
-            # Indexa o produto na Tabela Hash em memória
+            # Adiciona o novo produto na tabela
             for tag in tags:
                 inserir_na_tabela(tabela, tag, novo_produto)
 
             print(f"\nProduto ID {novo_produto['id']} ('{novo_produto['nome']}') indexado na Tabela Hash!")
             print("(Cadastrado apenas nesta sessão em memória, sem salvar em disco)")
 
-        # OPÇÃO 2: BUSCAR PRODUTOS VIA IA (SEM PERSISTÊNCIA)
         elif opcao == "2":
             print("\n-- Busca no Catálogo com IA --")
             consulta = input("O que você procura? ").strip()
@@ -275,11 +237,9 @@ def main():
 
             print("Identificando tags com a IA...")
             tags_busca = gerar_tags_com_ia(consulta, max_tags=4)
-            # Separe tags compostas (ex.: "sapato social") em palavras individuais
             tags_busca = [t for tag in tags_busca for t in tag.split() if t]
             print(f"Tags geradas para a busca: {tags_busca}")
 
-            # Busca e ranqueia por relevância
             resultados = buscar_por_varias_tags(tabela, tags_busca, max_resultados=10)
 
             if not resultados:
@@ -293,7 +253,6 @@ def main():
                         print(f"Descrição: {prod['descricao']}")
                     print(f"Tags em memória: {', '.join(prod.get('tags', []))}")
 
-        # OPÇÃO 3: LISTAR TODOS
         elif opcao == "3":
             print(f"\n-- Produtos no Catálogo ({len(produtos_cadastrados)} itens em memória) --")
             if not produtos_cadastrados:
@@ -305,11 +264,9 @@ def main():
                 if len(produtos_cadastrados) > limite_exibicao:
                     print(f"\n... e mais {len(produtos_cadastrados) - limite_exibicao} produtos (total: {len(produtos_cadastrados)}).")
 
-        # OPÇÃO 4: DEMONSTRAÇÃO DIDÁTICA DA TABELA HASH
         elif opcao == "4":
             inspecionar_tabela(tabela)
 
-        # OPÇÃO 0: SAIR
         elif opcao == "0":
             print("\nEncerrando o programa. Até mais!")
             break
