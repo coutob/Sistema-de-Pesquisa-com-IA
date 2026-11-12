@@ -1,20 +1,21 @@
-# Projeto 4 – Catálogo de Produtos com Tags Automáticas (Hash Table + IA)
+# Projeto  – Catálogo de Produtos com Tags Automáticas (Hash Table + IA)
 
 ## Visão geral
 Este é um pequeno aplicativo de linha de comando escrito em **Python** que demonstra como usar uma **tabela hash** para indexar produtos e buscar por eles usando **tags geradas automaticamente** por um modelo de IA local (Ollama).
 
-- Os 500 produtos de partida vêm de um arquivo JSON (`produtos_sem_tags.json`).
+- Os 500 produtos de partida vêm de um arquivo JSON, criado para o usuário não ter que criar na mão exemplos de produtos.
+- O arquivo JSON contém apenas exemplos de peças comuns de roupa, com variações de cor e tecido.
 - As tags são criadas **na memória** a cada execução – nada é gravado de volta no disco.
 - O programa funciona totalmente offline, desde que o **Ollama** esteja rodando e o modelo `qwen2.5-coder:1.5b` esteja disponível.
 
 ## Por que eu fiz isso?
-Estou no segundo período do curso de **Sistemas de Informação** e, enquanto aprendia sobre **estruturas de dados**, quis colocar a teoria de tabelas hash em prática. Também foi a primeira vez que configurei o Ollama para gerar sugestões de tags a partir de textos. O objetivo foi unir a teoria (hash) com algo mais “real” (IA).
+Estou no segundo período do curso de **Sistemas de Informação** e esse é meu trabalho de Estrutura de Dados utilizando tabelas hash de forma prática. Também foi a primeira vez que configurei o Ollama para gerar sugestões de tags a partir de textos. O objetivo foi unir a teoria (hash) com algo mais “real” (IA), além de configurar tudo no Linux.
 
-## Como usar
+
 ### Requisitos
 1. **Python 3.9+**
 2. **Ollama** instalado e rodando localmente (`http://127.0.0.1:11434`).
-3. Modelo `qwen2.5-coder:1.5b` (ou outro compatível) instalado no Ollama.
+3. Modelo `qwen2.5-coder:1.5b` instalado no Ollama, bem leve e rápido.
 
 ### Passo a passo
 ```bash
@@ -46,7 +47,7 @@ Todas as operações são temporárias; ao fechar o programa nada é salvo.
 ```
 projeto_ed1/
 │   projeto4.py          # código principal
-│   produtos_sem_tags.json  # 500 produtos de exemplo (sem tags)
+│   produtos.json  # 500 produtos de exemplo (sem tags)
 │   README.md            # este arquivo
 ```
 
