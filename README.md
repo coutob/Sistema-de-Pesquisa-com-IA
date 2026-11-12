@@ -25,7 +25,7 @@ Estou no segundo período do curso de **Sistemas de Informação** e esse é meu
 #    Não há pacotes externos, então nada a instalar.
 
 # 3. Certifique‑se de que o Ollama está ativo
-ollama serve &   # deixa o servidor rodando em background
+ollama serve  # deixa o servidor rodando em background
 
 # 4. Execute o programa pelo terminal
 python projeto4.py
