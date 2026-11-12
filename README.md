@@ -55,4 +55,4 @@ projeto_ed1/
 - **Persistência zero**: todo o catálogo fica em RAM, o que facilita testes e evita escrita acidental.
 
 ---
-*Feito por alguém que ainda tem muito a aprender, mas está feliz por ter conseguido criar um primeiro programa funcional, útil e com implementação de IA*
+*Feito por alguém que ainda tem muito a aprender e está bem feliz por ter conseguido criar um primeiro programa funcional, útil e com implementação de IA*
