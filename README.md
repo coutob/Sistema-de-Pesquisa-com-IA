@@ -1,3 +1,4 @@
+# Sistema de Pesquisa de E-Commerce categorizado com uso de IA
 # Projeto  – Catálogo de Produtos com Tags Automáticas (Hash Table + IA)
 
 ## Visão geral
