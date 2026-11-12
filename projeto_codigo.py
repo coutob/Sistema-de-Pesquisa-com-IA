@@ -4,6 +4,7 @@ import urllib.request
 import sys
 import io
 
+#Estava dando erro em pesquisas com mais de uma palavra, isso resolveu:
 sys.stdin = io.TextIOWrapper(sys.stdin.buffer, encoding='utf-8', errors='ignore')
 
 
